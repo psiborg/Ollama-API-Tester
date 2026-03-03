@@ -131,4 +131,4 @@ Any modern browser supporting ES modules and the Fetch API — Chrome, Firefox, 
 
 ## License
 
-MIT
+Apache License 2.0
