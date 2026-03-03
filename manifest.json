@@ -1,0 +1,16 @@
+{
+  "name": "Ollama API Tester",
+  "short_name": "OllamaTester",
+  "description": "Test Ollama JavaScript API endpoints",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#080c14",
+  "theme_color": "#0a0e1a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='32' fill='%230d1424'/><circle cx='96' cy='96' r='48' stroke='%2300f5c8' stroke-width='6' fill='none'/><circle cx='96' cy='96' r='18' fill='%2300f5c8'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
