@@ -2,7 +2,7 @@
 
 A progressive web app (PWA) for testing the [Ollama JavaScript API](https://github.com/ollama/ollama-js) — all endpoints, all parameters, right in your browser. No build tools or npm required.
 
-![Dark terminal-themed UI with sidebar navigation and JSON response panel]()
+![Dark terminal-themed UI with sidebar navigation and JSON response panel](screenshot.png)
 
 ## Features
 
