@@ -1,13 +1,15 @@
 // ============================================================
 // OLLAMA API TESTER — app.js
 // ============================================================
-import { Ollama } from 'https://esm.sh/ollama/browser';
+
+// https://unpkg.com/ollama/dist/browser.mjs
+import { Ollama } from './browser.mjs';
 window.Ollama = Ollama;
 
 // -- State ----------------------------------------------------
 const state = {
-  host: localStorage.getItem('ollama_host') || 'http://localhost:11434',
-  authHeader: localStorage.getItem('ollama_auth') || '',
+  host: localStorage.getItem('ollama_api_tester_host') || 'http://localhost:11434',
+  authHeader: localStorage.getItem('ollama_api_tester_auth') || '',
   currentEndpoint: 'chat',
   isStreaming: false,
   currentOllama: null,
@@ -859,8 +861,8 @@ function saveSettings() {
   const auth = $('auth-header').value.trim();
   state.host = host;
   state.authHeader = auth;
-  localStorage.setItem('ollama_host', host);
-  localStorage.setItem('ollama_auth', auth);
+  localStorage.setItem('ollama_api_tester_host', host);
+  localStorage.setItem('ollama_api_tester_auth', auth);
   resetOllama();
   updateHostBadge();
   closeSettings();
