@@ -1,6 +1,6 @@
 // Service Worker for Ollama API Tester PWA
 const CACHE = 'ollama-tester-v1';
-const ASSETS = ['/', '/index.html', '/app.css', '/app.js', '/manifest.json'];
+const ASSETS = ['./index.html', './app.css', './app.js', './manifest.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).catch(() => {}));
